@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutUs.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body> 
+    <div class="mean">
+            <div class="home_link">
+                <a href="https://storage.googleapis.com/footshopkz3/Project/project.html">Home</a> > Contact Us 
+            </div>
+            <div class="city">
+                <select name="select_city" id="city" onchange="initMap(kala.value)">
+                    <option value="Almaty" id = "kala" value="Almaty">
+                        <!--<input type="radio" checked>
+                        <label for="almaty">Almaty</label>-->
+                        Almaty
+                    </option>
+                    <option value="Nur-Sultan" id="kala">Nur-Sultan</option>
+                    <option value="Kentau" id="kala">Kentau</option>
+                </select>
+            </div>
+    </div>    
+        <a href="https://storage.googleapis.com/footshopkz3/Project/project.html">
+            <img class="logo" id="logo"  src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/982/3951711982_81591608-e0c8-4d41-b786-4dea2efde0a0.png?cb=1603112030">
+        </a>
+        <div class="contact">
+            <div class="maps">
+                <div class="map_info">
+                    HEY! Here you can visit us!   
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="sign" id="signID" >
+            
+                <div class="create" id="createID">
+                    <h1>Contact Us</h1>
+                    <div class="user_name">Name<br>
+                        <input id="name" type="text" name="name" placeholder="Name...">
+                    </div><br>
+                    <div class="email">Email<br>
+                        <input id="user" type="email" placeholder="Your email...">
+                    </div><br>
+                    <div class="message" id="messageID">Message<br>
+                        <textarea id="text" type="text" placeholder="...." rows="4" cols="50"></textarea>
+                    </div><br>
+                    <input class="send" type="button" value="Send" onclick="send(user.value , text.value)">
+    
+                </div>
+            </div>
+        </div>
+         <div class="cont7">
+        <div class="cont7_mean">
+            <h2>HALF MILLION OF PEOPLE CAN’T BE WRONG</h2>
+            <p>Join them to access the newest releases, giveaways and news from sneakers world</p>
+        </div>
+        <div class="cont7_medias">
+        <div class="media_icon_instagram">
+            <a href="#"><div class="instagram_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path d="M16 2.9h6.5c4.3.3 6.3 2.3 6.5 6.6a111.5 111.5 0 010 
+                    13c-.2 4.3-2.2 6.3-6.5 6.5a111.2 111.2 0 01-13 0c-4.3-.2-6.3-2.2-6.5-6.5a111 
+                    111 0 010-13C3.2 5.2 5.2 3.2 9.5 3l6.5-.1zM16 0L9.4.1C3.6.4.4 3.6.1 9.4a112.2
+                    112.2 0 000 13.2c.3 5.8 3.5 9 9.3 9.3l6.6.1 6.6-.1c5.8-.3 9-3.5 9.3-9.3L32 
+                    16l-.1-6.6c-.3-5.8-3.5-9-9.3-9.3L16 0zm0 7.8a8.2 8.2 0 100 16.4 8.2 8.2 0 
+                    000-16.4zm0 13.5a5.3 5.3 0 110-10.6 5.3 5.3 0 010 10.6zm8.5-15.8a2 2 0 100 
+                    3.9 2 2 0 000-3.9z"></path>
+                </svg>
+            </div></a>
+            <div class="cont7_text">Instagram</div>
+        </div>
+        <div class="media_icon_youtube">    
+            <a href="#"><div class="youtube_icon">     
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="32" viewBox="0 0 45 32"><path d="M44 5c-.4-1.9-2-3.4-3.9-4C36.6.2 22.6.2 22.6.2S8.6.1 5 1.1c-1.9.5-3.4 2-4 4C.2 8.6.2 15.9.2 15.9s0 7.4 1 11c.5 1.9 2 3.4 4 3.9 3.4 1 17.5 1 17.5 1s14 0 17.5-1c2-.5 3.4-2 4-4C45 23.3 45 16 45 16s0-7.3-1-10.8zM18 22.7V9.3l11.7 6.6L18 22.6z"></path></svg>
+            </div></a>
+            <div class="cont7_text youtube_text">YouTube</div>
+        </div>
+        <div class="media_icon_facebook">
+            <a href="#"><div class="facebook_icon">
+                <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path d="M21 11a10 10 0 10-11.6 9.9v-7H7V11h2.5V8.8c0-2.5 1.5-3.9 3.8-3.9l2.3.2v2.5h-1.3c-1.3 0-1.6.7-1.6 1.5V11h2.7l-.4 2.9h-2.3v7A10 10 0 0021 11" fill-rule="evenodd"></path></svg>
+            </div></a>
+            <div class="cont7_text">Facebook</div>
+        </div> 
+        <div class="media_icon_twitter">   
+            <a href="#"><div class="twitter_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M32 7a13 13 0 01-3.8 1.1 6.6 6.6 0 003-3.6c-1.4.7-2.8 1.3-4.3 1.6a6.6 6.6 0 00-11.1 6A18.6 18.6 0 012.2 5a6.6 6.6 0 002 8.9c-1 0-2-.4-3-.9v.1c0 3.2 2.4 5.9 5.4 6.5a6.6 6.6 0 01-3 0 6.6 6.6 0 006.1 4.6A13.2 13.2 0 010 27.1a18.6 18.6 0 0028.7-16.6C30 9.5 31.1 8.4 32 7z"></path></svg>
+            </div></a>
+            <div class="cont7_text twitter_text">Twitter</div>
+         </div>
+         </div>
+    </div>     
+    <hr>
+    
+    <div class="cont9">
+        <div class="pay_cards">
+            <ul class="pay">
+               <li>
+                    <div class="pay_op">
+                        <img src="paypal.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="apple-pay.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="mastercard.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="visa-electron.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="visa.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="maestro.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="jcb.png" alt="">
+                    </div>
+                </li>
+               <li>
+                    <div class="pay_op">
+                        <img src="diners.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="aboutUs.js"></script>
+</body>
+</html>

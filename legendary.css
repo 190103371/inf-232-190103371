@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.mean{
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(97, 103, 107);
+    color: white;
+    display: flex;
+}
+.home{
+    margin: 3.5rem 0 0 5rem;
+}
+.home_link{
+    color: white;
+    margin-left: 1rem;
+}
+.home_link:hover{
+    color: antiquewhite;
+}
+.home_link:active{
+    color: greenyellow;
+}
+.text{
+    width: 40rem;
+    margin: 5.5rem 0 0 -12.3rem;
+}
+.logo{
+    width: 50%;
+    margin: 3.5rem 0 0 14.5rem;
+}
+.cont1{
+    margin: 4rem 0 0 1.8rem;
+    height: 30rem;
+}
+.cont1_images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8rem 1.8rem 0 0;
+    
+}
+.cont1_images img{
+    width: 21rem;
+}
+.cont1_content{
+    margin-bottom: 2.5rem;
+}
